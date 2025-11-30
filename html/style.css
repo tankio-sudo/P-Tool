@@ -1,0 +1,490 @@
+/*page acceuil*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --or: #F2C94C;
+    --blue: #0A3C89;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* -- TEXTES CARRÉS / PROPRES -- */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+body, p, span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.body_acceuil {
+    background: linear-gradient(135deg, #0A3C89 0%, #0D47A1 50%, #0B2F78 100%);
+    color: #FFFFFF;
+}
+
+/* -- LAYOUT -- */
+.box-container {
+    display: grid;
+}
+
+/* -- HEADER -- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    color: gold;
+    position: relative;
+    top: 10px;
+}
+
+.logo .fa-earth-africa {
+    color: gold;
+    font-size: 45px;
+}
+
+.logo span {
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    
+    background: linear-gradient(to right, #ffd600, #ff9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 20vh;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.4s ease;
+    position: relative;
+    padding-bottom: 10px;
+    top: 10px;
+}
+
+.nav a:hover {
+    color: var(--or);
+    font-size: 21px;
+    cursor: pointer;
+}
+
+
+.explain button,
+.header-acceuil button {
+    background-color: gold; 
+    border: none;
+    border-radius: 6px;  
+    font-weight: bold;
+    color: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    top: 6px;
+    width: 200px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+}
+
+.header-acceuil button:hover,
+.explain button:hover {
+    background-color: rgb(255, 206, 43); 
+    transform: translateY(-4px);
+}
+
+.header-acceuil button:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+
+.explain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    top: 13vh;
+}
+
+.text-area {
+    display: grid;
+    gap: 40px;
+}
+
+.text-area h1 {
+    font-size: 40px;
+    background: linear-gradient(to right, #ffd600, #ff9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-area p {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.logo-phone {
+    background-color: rgb(6, 10, 46);
+    height: 350px;
+    width: 600px;
+    border-radius: 10px;
+    filter: brightness(150%);
+}
+
+.explain button {
+    border-bottom: none;
+}
+
+/* -- SECTION 2 -- */
+.explain2 {
+    text-align: center;
+    position: relative;
+    top: 25vh;
+    display: grid;
+    gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.explain2 h1 span {
+    background: linear-gradient(to right, #ffd600, #ff9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ar {
+    display: flex;
+    justify-content: center;
+}
+
+
+.argument {
+    height: 400px;
+    padding: 40px 70px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.25);
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 2px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image:
+        linear-gradient(#0A3C89, #0A3C89),
+        linear-gradient(90deg, #092f68, #ffd600);
+    transition: all 0.3s;
+}
+
+.argument i {
+    font-size: 55px;
+    background: linear-gradient(to right, #ffd600, #ff9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.argument h3 {
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+}
+
+.argument p {
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: 280px;  
+}
+
+.argument:hover {
+    transform: translateY(-10px);
+}
+
+/*Fin*/
+
+/* Entete  */
+.body_entete {
+    background-color: whitesmoke;
+}
+
+.rech {
+    background-color: white;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
+}
+
+.nav-connect {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 5px;
+}
+
+.s-connect,
+.s-inscript {
+    display: grid;
+    justify-content: center;
+    gap: 2px;
+    font-weight: bold;
+}
+
+.s-connect i,
+.s-inscript i {
+    font-size: 25px;
+    color: rgb(85, 83, 83);
+    text-align: center;
+}
+
+.s-connect a,
+.s-inscript a {
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.s-connect a:hover,
+.s-inscript a:hover {
+    text-decoration: underline;
+}
+
+
+.recherche {
+    padding: 20px;
+    height: 50px;
+    width: 400px;
+    border: none;
+    background-color: rgb(179, 177, 177, 0.1);
+    border-radius: 10px;
+}
+
+
+.form-rech {
+    display: flex;
+    gap: 5px;
+}
+
+.button-search {
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.recherche::placeholder {
+    font-size: 14px;
+}
+
+.button-search .fa-search {
+    color: white;
+    font-size: 20px;
+}
+
+.publish {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background:  linear-gradient(90deg, #092f68 20%, #ffd600);
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.publish:hover {
+    transform: translateY(-5px);
+}
+
+.publish:active {
+    transform: scale(0.9);
+}
+
+.body_entete .affich_contain .rech .logo{
+    position: relative;
+    top: -0px; 
+}
+/* Fin */
+
+
+/* Self */
+.self-body {
+    background-color: whitesmoke;
+}
+
+.self_container {
+    display: flex;
+    position: relative;
+    top: 50px;
+    padding-left: 10px;
+}
+
+.filter {
+    background-color: white;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 300px;
+    width: 250px;
+}
+
+.filter h2 {
+    color: var(--blue);
+}
+
+.filter p {
+    font-size: 12px;
+    border-bottom: 2px solid #ff9800;  
+    width: 220px;
+}
+
+.filter .option-filter {
+    display: grid;
+    gap: 15px;
+    position: relative;
+    top: 35px;
+    width: 220px;
+    padding-bottom: 36px;
+    border-bottom: 2px solid #0A3C89;
+}
+
+.option-filter div {
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+
+}
+
+.option-filter div label {
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--blue);
+    transition: all 0.3s;
+}
+
+.option-filter div label:hover {
+    background: linear-gradient(to right, #ffd600, #ff9800);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateX(5px);
+}
+
+#prix-top {
+    position: relative;
+    left: 170px;
+}
+
+#prix-bas {
+    position: relative;
+    left: 170px;
+}
+
+#recent {
+    position: relative;
+    left: 148px;
+}
+
+#favoris {
+    position: relative;
+    left: 145px;
+}
+
+#prix-top:hover {
+    background-color: #0D47A1;
+}
+
+
+.fake-radio {
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(124, 121, 121);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 152px;
+    top: 4px;
+}
+
+.fake-radio2 {
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(124, 121, 121);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 130px;
+    top: 4px;
+}
+
+.fake-radio3 {
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(124, 121, 121);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 126px;
+    top: 4px;
+}
+
+input:checked + .fake-radio {
+    background: #ff9800 ;
+}
+
+input:checked + .fake-radio2 {
+    background: #ff9800 ;
+}
+
+input:checked + .fake-radio3 {
+    background: #ff9800 ;
+}
+
+
+
+
+
+/* Fin */
